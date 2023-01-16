@@ -1,0 +1,45 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "ual-atw-manager",
+  "version": "1.0.0",
+  "description": "skrrrrt.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "array-sort": "1.0.0",
+    "ascii-table": "0.0.9",
+    "body-parser": "^1.20.1",
+    "canvas": "2.11.0",
+    "common-tags": "1.8.2",
+    "discord-anti-spam": "2.8.1",
+    "discord.js": "14.7.1",
+    "djs-commands": "2.0.5",
+    "dotenv": "16.0.3",
+    "edit-json-file": "1.7.0",
+    "enmap": "5.9.5",
+    "express": "4.18.2",
+    "math-expression-evaluator": "2.0.0",
+    "moment": "2.29.4",
+    "ms": "2.1.2",
+    "pm2": "5.2.2",
+    "quick.hook": "1.5.1",
+    "request-ip": "3.3.0",
+    "satelize": "^0.1.2",
+    "snekfetch": "4.0.4",
+    "table": "6.8.1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
