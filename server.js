@@ -43,21 +43,22 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var server = app.listen(3000, function() {
-  console.log("Listening on port %s", server.address().port);
-});
 
+client.on("ready", () => {
   
 
-  const { getVoiceConnection } = require('@discordjs/voice');
-  const connection = getVoiceConnection(1053860402066370674);
   
-  const channel = client.channels.cache.get("1053860402066370674");
+  
+  const channel = client.channels.cache.get("671261326483390464");
   if (!channel) return console.error("The channel does not exist!");
-  channel.join().then(connection => {1053860402066370674})
+  channel.join().then(connection => {
     // Yay, it worked!
     console.log("Successfully connected.");
-
+  }).catch(e => {
+    // Oh no, it errored! Let's log it to console :)
+    console.error(e);
+  });
+});
 
 const editJsonFile = require('edit-json-file')
 
@@ -215,4 +216,4 @@ if (message.mentions.users.size > 4){
 
 
 
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN);
