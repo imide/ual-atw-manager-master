@@ -1,12 +1,10 @@
 const Discord = require("discord.js");
-const { Client, Collection } = require("discord.js");
+const { Collection, Client, GatewayIntentBits , Intents} = require("discord.js");
 const { config } = require("dotenv");
 
-
-const client = new Client({
-  disableEveryone: true
-});
-
+const client = new Client(
+  { intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages]}
+)
 const fs = require("fs");
 
 
