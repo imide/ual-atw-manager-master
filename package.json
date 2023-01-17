@@ -10,6 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@discordjs/voice": "^0.14.0",
     "@material-ui/core": "^4.12.4",
     "array-sort": "1.0.0",
     "ascii-table": "0.0.9",
